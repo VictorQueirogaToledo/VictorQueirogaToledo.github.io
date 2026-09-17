@@ -514,8 +514,17 @@ p {
 
 .timeline p {
   color: var(--muted);
-  margin: 0;
+  margin: 0 0 10px;
   font-size: 14px;
+}
+
+.timeline ul {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.timeline article > *:last-child {
+  margin-bottom: 0;
 }
 
 .chips {

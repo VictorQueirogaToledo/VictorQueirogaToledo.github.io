@@ -28,9 +28,9 @@ Tudo o que falta preencher esta marcado no HTML com `class="todo"` (aparece em l
 
 - [x] URL do LinkedIn
 - [ ] E-mail e WhatsApp em `contato.html`
-- [ ] Anos de experiencia no contador da home
+- [x] Anos de experiencia no contador da home (3+, desde nov/2022 - vira 4 em nov/2026)
 - [ ] Formacao e certificacoes em `sobre.html` e `curriculo.html`
-- [ ] Cargos anteriores em `curriculo.html`
+- [x] Cargos anteriores em `curriculo.html`
 - [ ] PDF do curriculo em `assets/curriculo.pdf`
 - [ ] Foto (opcional) e favicon
 
