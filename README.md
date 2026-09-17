@@ -1,6 +1,6 @@
 # victorqueirogatoledo.github.io
 
-Portfolio pessoal de Victor Queiroga Toledo - infraestrutura de TI, redes e telefonia IP.
+Portfolio pessoal de Victor Queiroga Toledo - infraestrutura de TI: switches, Wi-Fi, cabeamento e servidores.
 Site estatico (HTML + CSS + JS, sem dependencias de build), publicado por GitHub Pages.
 
 ## Paginas
