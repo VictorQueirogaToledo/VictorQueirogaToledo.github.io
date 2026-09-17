@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sobre — Victor Queiroga Toledo</title>
-<meta name="description" content="Analista de infraestrutura de TI e responsável pela QSI — Queiroga Solutions IT. Como trabalho: levantamento, execução em etapas, validação por evidência e documentação como entregável.">
+<meta name="description" content="Analista de infraestrutura de TI e responsável pela QSI. Trajetória do NOC à infraestrutura corporativa, monitoramento e observabilidade com Zabbix, Grafana e PRTG, e o método de trabalho.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
@@ -41,7 +41,7 @@
       <p>
         Sou <strong>Analista de Infraestrutura</strong> e atuo na ponta da operação: rede e VLANs,
         servidores, Microsoft 365 e Active Directory, telefonia IP, CFTV, controle de acesso,
-        impressão, salas de reunião, monitoramento e suporte N2/N3. Respondo pelo ciclo inteiro —
+        impressão, salas de reunião, monitoramento e suporte N1 e N2. Respondo pelo ciclo inteiro —
         levantamento, projeto, execução, validação, documentação e a auditoria depois.
       </p>
       <p>
@@ -60,7 +60,10 @@
         pelo Brasil — <strong>mais de 60 equipamentos MikroTik</strong>, links de operadora, CFTV e
         as estações que o COG usava para operar as usinas remotamente. Ambiente crítico: link que
         cai tem consequência imediata na operação, e o incidente é resolvido no turno, não no dia
-        seguinte. Foi ali que construí a base de redes e troubleshooting que uso até hoje.
+        seguinte. Foi ali que construí a base de redes e troubleshooting que uso até hoje — e
+        também a de <strong>monitoramento</strong>: acompanhava a infraestrutura por
+        <strong>Zabbix e Grafana</strong> e participei da <strong>migração da stack para o
+        PRTG</strong>.
       </p>
       <p>
         Em <strong>2023</strong> fui contratado pela própria empresa onde eu atuava como terceiro e
@@ -74,7 +77,8 @@
         Em <strong>julho de 2025</strong> entrei na <strong>VMI Security como Analista de
         Infraestrutura</strong>, e o salto foi de escopo e de responsabilidade: Active Directory e
         GPOs, servidores Windows e Linux, Hyper-V, switches, VLANs, rede cabeada e Wi-Fi com
-        UniFi, FortiGate, Zabbix e Grafana, servidor de impressão, Microsoft 365 e Entra ID. Junto
+        UniFi, FortiGate, monitoramento com Zabbix e Grafana, BI de acompanhamento dos chamados de
+        TI, servidor de impressão, Microsoft 365 e Entra ID. Junto
         veio o lado que não aparece no console — processos, documentação, segurança da informação e
         governança, num ambiente com ISO 27001, 9001 e 14001.
       </p>
@@ -93,8 +97,25 @@
         <li><strong>Execução em etapas com rollback.</strong> Cada etapa é um script versionado e um ponto de retorno; janela combinada com quem usa o ambiente.</li>
         <li><strong>Validação por evidência.</strong> Contador de regra, MAC por VLAN, velocidade negociada da porta, plano de execução da consulta. Número, não impressão.</li>
         <li><strong>Privilégio mínimo por padrão.</strong> Integração de dados e acesso de terceiro nascem restritos, com rollback guardado antes de aplicar.</li>
+        <li><strong>Monitorar antes de o usuário avisar.</strong> Servidor, serviço, equipamento de rede, link e site sob Zabbix e Grafana, com alerta que chega a quem resolve — indisponibilidade percebida pelo painel, não pelo telefone tocando.</li>
         <li><strong>Documentação como entregável.</strong> POP de implantação, as-built e GMUD saem junto com o projeto.</li>
         <li><strong>Comunicação direta.</strong> Risco assumido pelo cliente entra no documento como risco assumido, com a mitigação aplicada ao lado.</li>
+      </ul>
+
+      <h3>Monitoramento e observabilidade</h3>
+      <p>
+        É uma linha que atravessa toda a minha carreira: comecei num NOC, onde o painel era o
+        trabalho, e hoje continuo do outro lado — desenhando o que precisa ser monitorado em vez de
+        só reagir ao alerta. Trabalhei com <strong>Zabbix</strong>, <strong>Grafana</strong> e
+        <strong>PRTG</strong>, incluindo a migração entre stacks, o que dá uma noção prática do que
+        cada uma entrega e do que se perde numa troca.
+      </p>
+      <ul>
+        <li><strong>O que fica sob monitoramento:</strong> servidores, serviços, equipamentos de rede, links de internet, sites e a disponibilidade dos ambientes.</li>
+        <li><strong>Identificação de indisponibilidade:</strong> distinguir queda de link, de serviço e de equipamento — três causas que o usuário relata com a mesma frase.</li>
+        <li><strong>Acompanhamento de alertas:</strong> alerta que chega a quem resolve, com limiar que faz sentido; alerta que todo mundo ignora é ruído, não monitoramento.</li>
+        <li><strong>Análise de infraestrutura:</strong> usar o histórico do painel para achar tendência e causa raiz, não só o incidente do momento.</li>
+        <li><strong>Indicadores de operação:</strong> BI sobre os chamados de TI, acompanhando volume e comportamento do atendimento — e o mesmo raciocínio aplicado à telefonia no <a href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/powerbi-cdr-telefonia">projeto de CDR em Power BI</a>.</li>
       </ul>
 
       <h3>Onde eu costumo ser chamado</h3>
@@ -113,7 +134,7 @@
         <li>SonicWall</li><li>Microsoft 365</li><li>Entra ID</li><li>Active Directory / GPO</li>
         <li>Windows Server</li><li>Proxmox</li><li>Hyper-V</li><li>Issabel / Asterisk</li>
         <li>Avaya</li><li>Yealink</li><li>Hikvision</li><li>Intelbras</li><li>Zabbix</li>
-        <li>Grafana</li><li>Acronis</li><li>Bitdefender</li><li>SQL Server</li><li>MySQL</li>
+        <li>Grafana</li><li>PRTG</li><li>Acronis</li><li>Bitdefender</li><li>SQL Server</li><li>MySQL</li>
         <li>Power BI</li><li>PowerShell</li><li>Git</li>
       </ul>
 
