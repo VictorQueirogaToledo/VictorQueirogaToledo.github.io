@@ -26,7 +26,7 @@ O arquivo `.nojekyll` impede o Jekyll de processar o conteudo (mantem pastas ini
 
 Tudo o que falta preencher esta marcado no HTML com `class="todo"` (aparece em laranja no site):
 
-- [ ] URL do LinkedIn (esta como `SEU-LINKEDIN` no rodape de todas as paginas)
+- [x] URL do LinkedIn
 - [ ] E-mail e WhatsApp em `contato.html`
 - [ ] Anos de experiencia no contador da home
 - [ ] Formacao e certificacoes em `sobre.html` e `curriculo.html`
