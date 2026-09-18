@@ -4,159 +4,167 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projetos — Victor Queiroga Toledo</title>
-<meta name="description" content="Projetos de infraestrutura entregues: segmentação com VLANs, diagnóstico de Wi-Fi e cabeamento, deploy por GPO, Power BI sobre CDR e publicação de site estático.">
+<meta name="description" content="Projetos de infraestrutura entregues: segmentação com VLANs, diagnóstico de Wi-Fi e cabeamento, backup de configuração, deploy por GPO, Power BI sobre CDR, privilégio mínimo e segurança web.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
-<header class="site-nav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html"><span class="dot"></span> VICTOR QUEIROGA</a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">MENU</button>
-    <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html" aria-current="page">Projetos</a>
-      <a href="curriculo.html">Currículo</a>
-      <a href="contato.html">Contato</a>
-    </nav>
+<div class="term">
+  <div class="term-bar">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="term-title">victor@infra: ~/projetos — bash — 100×40</span>
   </div>
-</header>
 
-<main id="conteudo">
+  <nav class="tabs" aria-label="Navegação principal">
+    <a href="index.html">~/início</a>
+    <a href="sobre.html">~/sobre</a>
+    <a href="projetos.html" aria-current="page">~/projetos</a>
+    <a href="curriculo.html">~/currículo</a>
+    <a href="contato.html">~/contato</a>
+  </nav>
 
-  <section class="home-stage">
-    <div class="wrap">
-      <p class="eyebrow">PROJETOS</p>
-      <h1 style="font-size:clamp(34px,7vw,68px)">O que eu já coloquei de pé.</h1>
-      <p class="lede">
-        Cada projeto abre a apresentação completa no GitHub: objetivo, escopo, levantamento,
-        solução, validação, resultado e lições aprendidas. São dez, e todo conteúdo é sanitizado — sem
-        nome de cliente, IP, hostname, ramal ou credencial.
+  <main class="term-body" id="conteudo">
+
+    <h1 class="banner-sub"><span class="strong">~/projetos</span> — o que eu já coloquei de pé</h1>
+
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> cat <span class="arg">projetos/LEIAME</span></p>
+    <div class="out">
+      <p>
+        Cada entrada abre a apresentação completa no GitHub: objetivo, escopo, levantamento,
+        solução, validação, resultado e lições aprendidas. São dez, e todo conteúdo é sanitizado —
+        sem nome de cliente, IP, hostname, ramal ou credencial.
       </p>
     </div>
-  </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="cards">
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> ls <span class="arg">-l projetos/</span></p>
+    <div class="out entries">
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/rede-vlans-mikrotik">
-          <p class="card-kicker">01 · Redes</p>
-          <h3>Rede segmentada com VLANs</h3>
-          <p>Rede plana de um prédio administrativo migrada para três VLANs (gerência, corporativa e funcionários) com roteador de borda, switch L2 e dois APs gerenciados — sem parada de produção. Isolamento provado por contador de regra.</p>
-          <div class="tags">
-            <span class="tag">MikroTik</span><span class="tag">VLAN 802.1Q</span><span class="tag">Wi-Fi</span><span class="tag">Firewall</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/rede-vlans-mikrotik">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">01</span>
+        <span>
+          <span class="name">rede-vlans-mikrotik/</span>
+          <span class="desc">Rede plana de um prédio administrativo migrada para três VLANs (gerência, corporativa e funcionários) com roteador de borda, switch L2 e dois APs gerenciados — sem parada de produção. Isolamento provado por contador de regra.</span>
+          <span class="meta">redes · MikroTik · VLAN 802.1Q · Wi-Fi · firewall</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/diagnostico-wifi-camada-fisica">
-          <p class="card-kicker">02 · Wi-Fi e cabeamento</p>
-          <h3>Wi-Fi travado em 100 Mbps</h3>
-          <p>Link de 600 Mbps entregando 93 Mbps no Wi-Fi. Depois de corrigir o rádio e o número não mudar, a causa raiz apareceu na camada física: um par do cabo mal encaixado no conector do AP.</p>
-          <div class="tags">
-            <span class="tag">Wi-Fi</span><span class="tag">Cabeamento</span><span class="tag">Ethernet</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/diagnostico-wifi-camada-fisica">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">02</span>
+        <span>
+          <span class="name">diagnostico-wifi-camada-fisica/</span>
+          <span class="desc">Link de 600 Mbps entregando 93 Mbps no Wi-Fi. Depois de corrigir o rádio e o número não mudar, a causa raiz apareceu na camada física: um par do cabo mal encaixado no conector do AP.</span>
+          <span class="meta">wi-fi · cabeamento · ethernet · troubleshooting</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/backup-config-rede-powershell">
-          <p class="card-kicker">03 · Automação</p>
-          <h3>Backup versionado de configuração</h3>
-          <p>Roteador em produção sem nenhuma cópia da configuração. Script que gera export e backup, traz os dois para um repositório local, limpa o equipamento e mostra o que mudou desde a última rodada.</p>
-          <div class="tags">
-            <span class="tag">PowerShell</span><span class="tag">RouterOS</span><span class="tag">SSH</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/backup-config-rede-powershell">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">03</span>
+        <span>
+          <span class="name">backup-config-rede-powershell/</span>
+          <span class="desc">Roteador em produção sem nenhuma cópia da configuração. Script que gera export e backup, traz os dois para um repositório local, limpa o equipamento e mostra o que mudou desde a última rodada.</span>
+          <span class="meta">automação · PowerShell · RouterOS · SSH</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/deploy-gpo-web-agent">
-          <p class="card-kicker">04 · Windows / AD</p>
-          <h3>Deploy per-user via script de logon</h3>
-          <p>Instalador per-user descarta a GPO de software. Script PowerShell idempotente no logon, cópia local antes de instalar e código de reinício pendente tratado como sucesso.</p>
-          <div class="tags">
-            <span class="tag">Active Directory</span><span class="tag">GPO</span><span class="tag">PowerShell</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/deploy-gpo-web-agent">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">04</span>
+        <span>
+          <span class="name">deploy-gpo-web-agent/</span>
+          <span class="desc">Instalador per-user descarta a GPO de software. Script PowerShell idempotente no logon, cópia local antes de instalar e código de reinício pendente tratado como sucesso.</span>
+          <span class="meta">windows · Active Directory · GPO · PowerShell</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/higiene-inventario-endpoints">
-          <p class="card-kicker">05 · Endpoint</p>
-          <h3>Higiene do inventário de antivírus</h3>
-          <p>76 máquinas sem reportar ao console há mais de 30 dias, 36 delas ainda consumindo licença. Classificação por faixa de abandono, separando máquina desativada de máquina desprotegida.</p>
-          <div class="tags">
-            <span class="tag">Endpoint protection</span><span class="tag">Inventário</span><span class="tag">AD</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/higiene-inventario-endpoints">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">05</span>
+        <span>
+          <span class="name">higiene-inventario-endpoints/</span>
+          <span class="desc">76 máquinas sem reportar ao console do antivírus há mais de 30 dias, 36 delas ainda consumindo licença. Classificação por faixa de abandono, separando máquina desativada de máquina desprotegida.</span>
+          <span class="meta">endpoint · inventário · licenciamento · AD</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/powerbi-cdr-telefonia">
-          <p class="card-kicker">06 · Dados</p>
-          <h3>Power BI sobre o CDR do PABX</h3>
-          <p>O CDR grava uma linha por perna, não por chamada: ler a tabela crua mostrava 8% de atendimento em vez dos 52% reais. Consolidação correta, consulta de 117s para 1,8s e acesso com privilégio mínimo.</p>
-          <div class="tags">
-            <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">ODBC</span><span class="tag">MySQL</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/powerbi-cdr-telefonia">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">06</span>
+        <span>
+          <span class="name">powerbi-cdr-telefonia/</span>
+          <span class="desc">O CDR grava uma linha por perna, não por chamada: ler a tabela crua mostrava 8% de atendimento em vez dos 52% reais. Consolidação correta, consulta de 117s para 1,8s e acesso com privilégio mínimo.</span>
+          <span class="meta">dados · Power BI · SQL · ODBC · MySQL</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/acesso-dados-privilegio-minimo">
-          <p class="card-kicker">07 · Segurança de acesso</p>
-          <h3>Privilégio mínimo para a equipe de dados</h3>
-          <p>O schema de configuração do PABX guarda senhas SIP em texto plano. Acesso entregue por views de dimensão com segurança de definidor: o dado útil passa, o segredo não.</p>
-          <div class="tags">
-            <span class="tag">MySQL</span><span class="tag">Views</span><span class="tag">GRANT</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/acesso-dados-privilegio-minimo">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">07</span>
+        <span>
+          <span class="name">acesso-dados-privilegio-minimo/</span>
+          <span class="desc">O schema de configuração do PABX guarda senhas SIP em texto plano. Acesso entregue por views de dimensão com segurança de definidor: o dado útil passa, o segredo não.</span>
+          <span class="meta">segurança de acesso · MySQL · views · GRANT</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/telefonia-ip-issabel">
-          <p class="card-kicker">08 · Telefonia IP</p>
-          <h3>Inventário e padronização de codecs</h3>
-          <p>Mais de 200 ramais SIP sem inventário, sem padrão de codec e sem documentação. Levantamento extraído do banco de configuração, padronização e mapa de onde cada objeto vive.</p>
-          <div class="tags">
-            <span class="tag">Issabel</span><span class="tag">Asterisk</span><span class="tag">SIP</span><span class="tag">MySQL</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/telefonia-ip-issabel">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">08</span>
+        <span>
+          <span class="name">telefonia-ip-issabel/</span>
+          <span class="desc">Mais de 200 ramais SIP sem inventário, sem padrão de codec e sem documentação. Levantamento extraído do banco de configuração, padronização e mapa de onde cada objeto vive.</span>
+          <span class="meta">telefonia IP · Issabel · Asterisk · SIP</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/site-estatico-pages-cloudflare">
-          <p class="card-kicker">09 · Publicação</p>
-          <h3>Site estático com Pages + Cloudflare</h3>
-          <p>Publicação por CI a cada push, domínio próprio, TLS estrito antes de ligar o proxy e imagens de 4,25 MB para 184 KB.</p>
-          <div class="tags">
-            <span class="tag">GitHub Pages</span><span class="tag">Cloudflare</span><span class="tag">CI/CD</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/site-estatico-pages-cloudflare">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">09</span>
+        <span>
+          <span class="name">site-estatico-pages-cloudflare/</span>
+          <span class="desc">Publicação por CI a cada push, domínio próprio, TLS estrito antes de ligar o proxy e imagens de 4,25 MB para 184 KB.</span>
+          <span class="meta">publicação · GitHub Pages · Cloudflare · CI/CD</span>
+        </span>
+      </a>
 
-        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/hardening-cabecalhos-csp">
-          <p class="card-kicker">10 · Segurança web</p>
-          <h3>Cabeçalhos de segurança e CSP</h3>
-          <p>Hospedagem que não permite configurar cabeçalho HTTP: seis cabeçalhos aplicados na borda e um script de terceiro integrado sem afrouxar a política — nem quebrar os formulários.</p>
-          <div class="tags">
-            <span class="tag">CSP</span><span class="tag">HSTS</span><span class="tag">TLS</span><span class="tag">API</span>
-          </div>
-        </a>
+      <a class="entry" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/hardening-cabecalhos-csp">
+        <span class="perm">drwxr-xr-x</span>
+        <span class="id">10</span>
+        <span>
+          <span class="name">hardening-cabecalhos-csp/</span>
+          <span class="desc">Hospedagem que não permite configurar cabeçalho HTTP: seis cabeçalhos aplicados na borda e um script de terceiro integrado sem afrouxar a política — nem quebrar os formulários.</span>
+          <span class="meta">segurança web · CSP · HSTS · TLS · API</span>
+        </span>
+      </a>
 
-      </div>
+    </div>
 
-      <p class="note" style="margin-top:32px">
-        Precisa do detalhe técnico completo, com diagrama e evidência?
-        O repositório <a href="https://github.com/VictorQueirogaToledo/apresentacoes">apresentacoes</a>
-        tem uma pasta por projeto.
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> <span class="comment"># detalhe técnico completo, com diagrama e evidência</span></p>
+    <div class="out">
+      <p class="note">
+        Tudo em <a href="https://github.com/VictorQueirogaToledo/apresentacoes">github.com/VictorQueirogaToledo/apresentacoes</a> — uma pasta por projeto.
       </p>
     </div>
-  </section>
 
-</main>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span><span class="cursor" aria-hidden="true"></span></p>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <span>© <span id="ano">2026</span> Victor Queiroga Toledo</span>
-    <nav class="footer-links" aria-label="Links externos">
-      <a href="https://github.com/VictorQueirogaToledo">GitHub</a>
-      <a href="https://github.com/VictorQueirogaToledo/apresentacoes">Apresentações</a>
-      <a href="https://queirogasolution.com.br">QSI</a>
-      <a href="https://www.linkedin.com/in/victor-queiroga-toledo/">LinkedIn</a>
-    </nav>
-  </div>
+  </main>
+</div>
+
+<footer class="foot">
+  <span>© <span id="ano">2026</span> Victor Queiroga Toledo</span>
+  <nav aria-label="Links externos">
+    <a href="https://github.com/VictorQueirogaToledo">github</a>
+    <a href="https://github.com/VictorQueirogaToledo/apresentacoes">apresentações</a>
+    <a href="https://queirogasolution.com.br">qsi</a>
+    <a href="https://www.linkedin.com/in/victor-queiroga-toledo/">linkedin</a>
+  </nav>
 </footer>
 
 <script src="assets/site.js"></script>

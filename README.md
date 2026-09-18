@@ -3,6 +3,8 @@
 Portfolio pessoal de Victor Queiroga Toledo - infraestrutura de TI: switches, Wi-Fi, cabeamento e servidores.
 Site estatico (HTML + CSS + JS, sem dependencias de build), publicado por GitHub Pages.
 
+**Layout: terminal.** Cada pagina e uma janela de terminal (barra de titulo, abas como caminhos) e cada secao e um par comando -> saida (`whoami`, `ls projetos/`, `history --carreira`, `cat metodo.txt`). Tudo em JetBrains Mono; azul da QSI para caminhos e links, verde para prompt e confirmacao, ambar para pendencia. Os componentes estao em `assets/styles.css`: `.term`, `.tabs`, `.cmd`, `.out`, `.entry` (saida tipo `ls -l`), `.hist` (historico), `.kv`, `.list`, `.chips`, `.note`.
+
 ## Paginas
 
 | Arquivo | Conteudo |

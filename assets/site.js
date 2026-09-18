@@ -1,28 +1,17 @@
-/* menu mobile + ano do rodapé */
+/* ano do rodapé e título da janela por página */
 (function () {
   "use strict";
-
-  var toggle = document.getElementById("navToggle");
-  var links = document.getElementById("navLinks");
-
-  if (toggle && links) {
-    toggle.addEventListener("click", function () {
-      var open = links.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      toggle.textContent = open ? "FECHAR" : "MENU";
-    });
-
-    links.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") {
-        links.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.textContent = "MENU";
-      }
-    });
-  }
 
   var ano = document.getElementById("ano");
   if (ano) {
     ano.textContent = String(new Date().getFullYear());
+  }
+
+  // "victor@infra: ~/pagina — bash — 100x40"
+  var titulo = document.querySelector(".term-title");
+  var atual = document.querySelector('.tabs a[aria-current="page"]');
+  if (titulo && atual) {
+    var caminho = atual.textContent.trim().replace(/^~\/(início)?/, "~/").replace(/\/$/, "");
+    titulo.textContent = "victor@infra: " + (caminho === "~" ? "~" : caminho) + " — bash — 100×40";
   }
 })();

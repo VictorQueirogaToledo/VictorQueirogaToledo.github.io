@@ -7,94 +7,72 @@
 <meta name="description" content="Fale comigo sobre projetos de rede, Wi-Fi, cabeamento estruturado e infraestrutura de TI — pela QSI, Queiroga Solutions IT.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
-<header class="site-nav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html"><span class="dot"></span> VICTOR QUEIROGA</a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">MENU</button>
-    <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="curriculo.html">Currículo</a>
-      <a href="contato.html" aria-current="page">Contato</a>
-    </nav>
+<div class="term">
+  <div class="term-bar">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="term-title">victor@infra: ~/contato — bash — 100×40</span>
   </div>
-</header>
 
-<main id="conteudo">
+  <nav class="tabs" aria-label="Navegação principal">
+    <a href="index.html">~/início</a>
+    <a href="sobre.html">~/sobre</a>
+    <a href="projetos.html">~/projetos</a>
+    <a href="curriculo.html">~/currículo</a>
+    <a href="contato.html" aria-current="page">~/contato</a>
+  </nav>
 
-  <section class="home-stage">
-    <div class="wrap">
-      <p class="eyebrow">CONTATO</p>
-      <h1 style="font-size:clamp(34px,7vw,68px)">Vamos conversar.</h1>
-      <p class="lede">
+  <main class="term-body" id="conteudo">
+
+    <h1 class="banner-sub"><span class="strong">~/contato</span> — vamos conversar</h1>
+
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> cat <span class="arg">contato.txt</span></p>
+    <div class="out">
+      <dl class="kv">
+        <dt>e-mail</dt><dd class="todo">[pendente] preencher@dominio.com.br</dd>
+        <dt>whatsapp</dt><dd class="todo">[pendente]</dd>
+        <dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/victor-queiroga-toledo/">linkedin.com/in/victor-queiroga-toledo</a></dd>
+        <dt>github</dt><dd><a href="https://github.com/VictorQueirogaToledo">github.com/VictorQueirogaToledo</a></dd>
+        <dt>consultoria</dt><dd><a href="https://queirogasolution.com.br">queirogasolution.com.br</a></dd>
+        <dt>atendimento</dt><dd>presencial na região de BH, remoto para o restante do Brasil</dd>
+      </dl>
+    </div>
+
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> cat <span class="arg">escopo.txt</span></p>
+    <div class="out">
+      <p>
         Rede e switches, Wi-Fi corporativo, cabeamento estruturado, organização de rack, servidores
         ou a documentação de um ambiente que ninguém sabe explicar — é disso que eu cuido, pela
         <a href="https://queirogasolution.com.br">QSI</a>.
       </p>
     </div>
-  </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="contact-grid">
-        <div class="contact-item">
-          <span>E-mail</span>
-          <p class="todo">preencher@dominio.com.br</p>
-        </div>
-        <div class="contact-item">
-          <span>WhatsApp</span>
-          <p class="todo">preencher</p>
-        </div>
-        <div class="contact-item">
-          <span>LinkedIn</span>
-          <a href="https://www.linkedin.com/in/victor-queiroga-toledo/">linkedin.com/in/victor-queiroga-toledo</a>
-        </div>
-        <div class="contact-item">
-          <span>GitHub</span>
-          <a href="https://github.com/VictorQueirogaToledo">github.com/VictorQueirogaToledo</a>
-        </div>
-        <div class="contact-item">
-          <span>Consultoria</span>
-          <a href="https://queirogasolution.com.br">queirogasolution.com.br</a>
-        </div>
-        <div class="contact-item">
-          <span>Atendimento</span>
-          <p>Presencial na região e remoto para o restante do Brasil.</p>
-        </div>
-      </div>
-
-      <div class="note" style="margin-top:32px">
-        <strong>Para um orçamento sair direto:</strong> diga o porte do ambiente (quantos pontos de
-        rede, ramais, servidores), o que dói hoje e se existe documentação. Com isso já consigo
-        responder com escopo, prazo e faixa de custo.
-      </div>
-
-      <div class="cta-row">
-        <a class="btn btn-solid" href="https://queirogasolution.com.br/contato">Formulário da QSI</a>
-        <a class="btn btn-ghost" href="projetos.html">Ver projetos ↗</a>
-      </div>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> <span class="comment"># para o orçamento sair direto</span></p>
+    <div class="out">
+      <p class="note">
+        Diga o porte do ambiente (quantos pontos de rede, ramais, servidores), o que dói hoje e se
+        existe documentação. Com isso já consigo responder com escopo, prazo e faixa de custo.
+      </p>
     </div>
-  </section>
 
-</main>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> <a href="https://queirogasolution.com.br/contato">abrir formulário da QSI</a> <span class="sep">|</span> <a href="projetos.html">ver projetos</a><span class="cursor" aria-hidden="true"></span></p>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <span>© <span id="ano">2026</span> Victor Queiroga Toledo</span>
-    <nav class="footer-links" aria-label="Links externos">
-      <a href="https://github.com/VictorQueirogaToledo">GitHub</a>
-      <a href="https://github.com/VictorQueirogaToledo/apresentacoes">Apresentações</a>
-      <a href="https://queirogasolution.com.br">QSI</a>
-      <a href="https://www.linkedin.com/in/victor-queiroga-toledo/">LinkedIn</a>
-    </nav>
-  </div>
+  </main>
+</div>
+
+<footer class="foot">
+  <span>© <span id="ano">2026</span> Victor Queiroga Toledo</span>
+  <nav aria-label="Links externos">
+    <a href="https://github.com/VictorQueirogaToledo">github</a>
+    <a href="https://github.com/VictorQueirogaToledo/apresentacoes">apresentações</a>
+    <a href="https://queirogasolution.com.br">qsi</a>
+    <a href="https://www.linkedin.com/in/victor-queiroga-toledo/">linkedin</a>
+  </nav>
 </footer>
 
 <script src="assets/site.js"></script>

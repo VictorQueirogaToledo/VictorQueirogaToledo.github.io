@@ -7,44 +7,39 @@
 <meta name="description" content="Analista de infraestrutura de TI e responsável pela QSI. Trajetória do NOC à infraestrutura corporativa, monitoramento e observabilidade com Zabbix, Grafana e PRTG, e o método de trabalho.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
-<header class="site-nav">
-  <div class="nav-inner">
-    <a class="brand" href="index.html"><span class="dot"></span> VICTOR QUEIROGA</a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">MENU</button>
-    <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
-      <a href="index.html">Início</a>
-      <a href="sobre.html" aria-current="page">Sobre</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="curriculo.html">Currículo</a>
-      <a href="contato.html">Contato</a>
-    </nav>
+<div class="term">
+  <div class="term-bar">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="term-title">victor@infra: ~/sobre — bash — 100×40</span>
   </div>
-</header>
 
-<main id="conteudo">
+  <nav class="tabs" aria-label="Navegação principal">
+    <a href="index.html">~/início</a>
+    <a href="sobre.html" aria-current="page">~/sobre</a>
+    <a href="projetos.html">~/projetos</a>
+    <a href="curriculo.html">~/currículo</a>
+    <a href="contato.html">~/contato</a>
+  </nav>
 
-  <section class="home-stage">
-    <div class="wrap">
-      <p class="eyebrow">SOBRE</p>
-      <h1 style="font-size:clamp(34px,7vw,68px)">Infraestrutura que<br>não depende de mim.</h1>
-    </div>
-  </section>
+  <main class="term-body" id="conteudo">
 
-  <section class="section">
-    <div class="wrap prose">
+    <h1 class="banner-sub"><span class="strong">~/sobre</span> — infraestrutura que não depende de mim</h1>
+
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> cat <span class="arg">sobre.md</span></p>
+    <div class="out">
       <p>
-        Sou <strong>Analista de Infraestrutura</strong> e atuo na ponta da operação:
-        <strong>switches e VLANs, Wi-Fi corporativo, cabeamento estruturado e configuração de
-        servidores</strong> — é aí que está o meu trabalho e é o que eu gosto de fazer. Em volta
-        disso vêm Microsoft 365 e Active Directory, monitoramento, impressão e o suporte N1 e N2.
-        Respondo pelo ciclo inteiro: levantamento, projeto, execução, validação, documentação e a
-        auditoria depois.
+        Sou <span class="strong">Analista de Infraestrutura</span> e atuo na ponta da operação:
+        <span class="strong">switches e VLANs, Wi-Fi corporativo, cabeamento estruturado e
+        configuração de servidores</span> — é aí que está o meu trabalho e é o que eu gosto de
+        fazer. Em volta disso vêm Microsoft 365 e Active Directory, monitoramento, impressão e o
+        suporte N1 e N2. Respondo pelo ciclo inteiro: levantamento, projeto, execução, validação,
+        documentação e a auditoria depois.
       </p>
       <p>
         Telefonia IP, CFTV, controle de acesso e salas de reunião eu atendo por consequência da
@@ -52,135 +47,150 @@
         todos eles, mas não é onde eu me posiciono.
       </p>
       <p>
-        Também sou responsável pela <strong>QSI — Queiroga Solutions IT</strong>, consultoria de
-        infraestrutura voltada a empresas cujo ambiente de TI cresceu organicamente: rede plana,
+        Também sou responsável pela <span class="strong">QSI — Queiroga Solutions IT</span>,
+        consultoria de infraestrutura para empresas cujo ambiente cresceu organicamente: rede plana,
         rack sem organização, cabeamento sem identificação, switch na configuração de fábrica e
-        nenhum desenho de referência. O trabalho é entrar nesse ambiente sem interromper o que está
-        rodando, organizar e deixar registrado.
+        nenhum desenho de referência.
       </p>
+    </div>
 
-      <h3>Minha evolução</h3>
-      <p>
-        Entrei em TI em <strong>novembro de 2022</strong>, num <strong>NOC</strong>, em escala 12x36
-        entre turnos diurno e noturno. Meu trabalho era acompanhar a comunicação entre a sede de um
-        grupo de geração de energia, em Belo Horizonte, e usinas hidrelétricas e solares espalhadas
-        pelo Brasil — <strong>mais de 60 equipamentos MikroTik</strong>, links de operadora, CFTV e
-        as estações que o COG usava para operar as usinas remotamente. Ambiente crítico: link que
-        cai tem consequência imediata na operação, e o incidente é resolvido no turno, não no dia
-        seguinte. Foi ali que construí a base de redes e troubleshooting que uso até hoje — e
-        também a de <strong>monitoramento</strong>: acompanhava a infraestrutura por
-        <strong>Zabbix e Grafana</strong> e participei da <strong>migração da stack para o
-        PRTG</strong>.
-      </p>
-      <p>
-        Em <strong>2023</strong> fui contratado pela própria empresa onde eu atuava como terceiro e
-        passei a acumular o NOC noturno com a <strong>TI administrativa</strong>: Microsoft 365,
-        SharePoint, Teams, Active Directory, NDD Print, Bitdefender e atendimento aos usuários. Foi
-        o período em que entendi que infraestrutura não é só o equipamento — é também o usuário que
-        depende dele. Em <strong>março de 2024</strong> fui transferido para outra empresa do mesmo
-        grupo, cuidando da TI do escritório e seguindo como apoio do NOC.
-      </p>
-      <p>
-        Em <strong>julho de 2025</strong> entrei na <strong>VMI Security como Analista de
-        Infraestrutura</strong>, e o salto foi de escopo e de responsabilidade: Active Directory e
-        GPOs, servidores Windows e Linux, Hyper-V, switches, VLANs, rede cabeada e Wi-Fi com
-        UniFi, FortiGate, monitoramento com Zabbix e Grafana, BI de acompanhamento dos chamados de
-        TI, servidor de impressão, Microsoft 365 e Entra ID. Junto
-        veio o lado que não aparece no console — processos, documentação, segurança da informação e
-        governança, num ambiente com ISO 27001, 9001 e 14001.
-      </p>
-      <p>
-        Em <strong>2026</strong>, em paralelo, comecei a <strong>QSI — Queiroga Solutions IT</strong>.
-        Nos primeiros meses já entreguei projetos de rede para clientes reais: três prédios de uma
-        clínica, a infraestrutura de um prédio público assumido por uma empreiteira após licitação,
-        comércio e projetos residenciais. Saí da operação de um NOC para um profissional de
-        infraestrutura que hoje atua nos dois lados — dentro de uma empresa e com projetos próprios.
-        A <a href="curriculo.html">página de currículo</a> tem a trajetória completa, cargo a cargo.
-      </p>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> history <span class="arg">--carreira</span></p>
+    <div class="out hist">
+      <article>
+        <span class="n">001</span>
+        <div>
+          <time>nov/2022 — mar/2023</time>
+          <h3>NOC, em escala 12x36</h3>
+          <p>
+            Acompanhava a comunicação entre a sede de um grupo de geração de energia, em Belo
+            Horizonte, e usinas hidrelétricas e solares espalhadas pelo Brasil — <span class="strong">mais de
+            60 equipamentos MikroTik</span>, links de operadora, CFTV e as estações que o COG usava para
+            operar as usinas remotamente. Ambiente crítico: link que cai tem consequência imediata,
+            e o incidente é resolvido no turno, não no dia seguinte. Ali construí a base de redes e
+            troubleshooting — e a de <span class="strong">monitoramento</span>: Zabbix e Grafana, mais a
+            participação na migração da stack para o PRTG.
+          </p>
+        </div>
+      </article>
+      <article>
+        <span class="n">002</span>
+        <div>
+          <time>2023 — mar/2024</time>
+          <h3>Contratado pela empresa onde eu era terceiro</h3>
+          <p>
+            Passei a acumular o NOC noturno com a TI administrativa: Microsoft 365, SharePoint,
+            Teams, Active Directory, NDD Print, Bitdefender e atendimento aos usuários. Foi quando
+            entendi que infraestrutura não é só o equipamento — é também o usuário que depende dele.
+          </p>
+        </div>
+      </article>
+      <article>
+        <span class="n">003</span>
+        <div>
+          <time>mar/2024 — jul/2025</time>
+          <h3>Transferência dentro do grupo</h3>
+          <p>
+            TI do escritório, seguindo como apoio do NOC. A atuação foi se aproximando cada vez mais
+            da infraestrutura.
+          </p>
+        </div>
+      </article>
+      <article>
+        <span class="n">004</span>
+        <div>
+          <time>jul/2025 — atual</time>
+          <h3>VMI Security, Analista de Infraestrutura</h3>
+          <p>
+            Salto de escopo e de responsabilidade: Active Directory e GPOs, servidores Windows e
+            Linux, Hyper-V, switches, VLANs, rede cabeada e Wi-Fi com UniFi, FortiGate, monitoramento
+            com Zabbix e Grafana, BI de acompanhamento dos chamados de TI, servidor de impressão,
+            Microsoft 365 e Entra ID. Junto veio o que não aparece no console — processos,
+            documentação, segurança da informação e governança, em ambiente com ISO 27001, 9001 e 14001.
+          </p>
+        </div>
+      </article>
+      <article>
+        <span class="n">005</span>
+        <div>
+          <time>2026 — atual</time>
+          <h3>QSI — Queiroga Solutions IT, em paralelo</h3>
+          <p>
+            Projetos próprios: três prédios de uma clínica, a infraestrutura de um prédio público
+            assumido por uma empreiteira após licitação, comércio e residencial. Saí da operação de
+            um NOC para atuar nos dois lados — dentro de uma empresa e com projetos próprios.
+            A <a href="curriculo.html">página de currículo</a> tem a trajetória cargo a cargo.
+          </p>
+        </div>
+      </article>
+    </div>
 
-      <h3>Como eu trabalho</h3>
-      <ul>
-        <li><strong>Levantamento antes de mexer.</strong> Inventário extraído da fonte — banco de configuração, tabela do switch, contador da regra — não da memória de quem operava.</li>
-        <li><strong>Execução em etapas com rollback.</strong> Cada etapa é um script versionado e um ponto de retorno; janela combinada com quem usa o ambiente.</li>
-        <li><strong>Validação por evidência.</strong> Contador de regra, MAC por VLAN, velocidade negociada da porta, plano de execução da consulta. Número, não impressão.</li>
-        <li><strong>Privilégio mínimo por padrão.</strong> Integração de dados e acesso de terceiro nascem restritos, com rollback guardado antes de aplicar.</li>
-        <li><strong>Monitorar antes de o usuário avisar.</strong> Servidor, serviço, equipamento de rede, link e site sob Zabbix e Grafana, com alerta que chega a quem resolve — indisponibilidade percebida pelo painel, não pelo telefone tocando.</li>
-        <li><strong>Documentação como entregável.</strong> POP de implantação, as-built e GMUD saem junto com o projeto.</li>
-        <li><strong>Comunicação direta.</strong> Risco assumido pelo cliente entra no documento como risco assumido, com a mitigação aplicada ao lado.</li>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> cat <span class="arg">metodo.txt</span></p>
+    <div class="out">
+      <ul class="list">
+        <li><span class="k">Levantamento antes de mexer.</span> Inventário extraído da fonte — banco de configuração, tabela do switch, contador da regra — não da memória de quem operava.</li>
+        <li><span class="k">Execução em etapas com rollback.</span> Cada etapa é um script versionado e um ponto de retorno; janela combinada com quem usa o ambiente.</li>
+        <li><span class="k">Validação por evidência.</span> Contador de regra, MAC por VLAN, velocidade negociada da porta, plano de execução da consulta. Número, não impressão.</li>
+        <li><span class="k">Privilégio mínimo por padrão.</span> Integração de dados e acesso de terceiro nascem restritos, com rollback guardado antes de aplicar.</li>
+        <li><span class="k">Monitorar antes de o usuário avisar.</span> Servidor, serviço, equipamento de rede, link e site sob Zabbix e Grafana, com alerta que chega a quem resolve.</li>
+        <li><span class="k">Documentação como entregável.</span> POP de implantação, as-built e GMUD saem junto com o projeto.</li>
+        <li><span class="k">Comunicação direta.</span> Risco assumido pelo cliente entra no documento como risco assumido, com a mitigação ao lado.</li>
       </ul>
+    </div>
 
-      <h3>Monitoramento e observabilidade</h3>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> cat <span class="arg">monitoramento.md</span></p>
+    <div class="out">
       <p>
-        É uma linha que atravessa toda a minha carreira: comecei num NOC, onde o painel era o
-        trabalho, e hoje continuo do outro lado — desenhando o que precisa ser monitorado em vez de
-        só reagir ao alerta. Trabalhei com <strong>Zabbix</strong>, <strong>Grafana</strong> e
-        <strong>PRTG</strong>, incluindo a migração entre stacks, o que dá uma noção prática do que
-        cada uma entrega e do que se perde numa troca.
+        É a linha que atravessa toda a minha carreira: comecei num NOC, onde o painel era o
+        trabalho, e hoje desenho o que precisa ser monitorado em vez de só reagir ao alerta.
+        Trabalhei com <span class="strong">Zabbix</span>, <span class="strong">Grafana</span> e
+        <span class="strong">PRTG</span>, incluindo a migração entre stacks.
       </p>
-      <ul>
-        <li><strong>O que fica sob monitoramento:</strong> servidores, serviços, equipamentos de rede, links de internet, sites e a disponibilidade dos ambientes.</li>
-        <li><strong>Identificação de indisponibilidade:</strong> distinguir queda de link, de serviço e de equipamento — três causas que o usuário relata com a mesma frase.</li>
-        <li><strong>Acompanhamento de alertas:</strong> alerta que chega a quem resolve, com limiar que faz sentido; alerta que todo mundo ignora é ruído, não monitoramento.</li>
-        <li><strong>Análise de infraestrutura:</strong> usar o histórico do painel para achar tendência e causa raiz, não só o incidente do momento.</li>
-        <li><strong>Indicadores de operação:</strong> BI sobre os chamados de TI, acompanhando volume e comportamento do atendimento — e o mesmo raciocínio aplicado à telefonia no <a href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/powerbi-cdr-telefonia">projeto de CDR em Power BI</a>.</li>
+      <ul class="list">
+        <li><span class="k">Sob monitoramento:</span> servidores, serviços, equipamentos de rede, links de internet, sites e disponibilidade dos ambientes.</li>
+        <li><span class="k">Identificação de indisponibilidade:</span> distinguir queda de link, de serviço e de equipamento — três causas que o usuário relata com a mesma frase.</li>
+        <li><span class="k">Acompanhamento de alertas:</span> alerta que chega a quem resolve, com limiar que faz sentido; alerta que todo mundo ignora é ruído.</li>
+        <li><span class="k">Análise:</span> usar o histórico do painel para achar tendência e causa raiz, não só o incidente do momento.</li>
+        <li><span class="k">Indicadores de operação:</span> BI sobre os chamados de TI, e o mesmo raciocínio aplicado à telefonia no <a href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/powerbi-cdr-telefonia">projeto de CDR em Power BI</a>.</li>
       </ul>
+    </div>
 
-      <h3>Onde eu costumo ser chamado</h3>
-      <ul>
-        <li>Rede plana que precisa de segmentação: <strong>switches, VLANs, Wi-Fi corporativo</strong> e isolamento de convidados.</li>
-        <li><strong>Rack e cabeamento</strong> sem organização nem identificação — passagem, crimpagem, certificação do que está de pé e etiquetagem.</li>
-        <li><strong>Wi-Fi</strong> que "funciona mas está lento": cobertura, bandas, steering e o que está depois do rádio.</li>
-        <li><strong>Servidores</strong> a configurar ou a organizar: Windows Server, Linux, Hyper-V, serviços e acessos.</li>
-        <li>Ambiente Microsoft 365 / Active Directory sem padronização de GPO, licenças e acessos.</li>
-        <li><strong>Monitoramento</strong> inexistente ou que ninguém olha.</li>
-        <li>Projeto que existe, funciona — e não tem um documento que explique.</li>
-      </ul>
-      <p>
-        Telefonia IP, CFTV, controle de acesso e salas de reunião entram junto quando o cliente
-        precisa, mas não são a minha vitrine.
-      </p>
-
-      <h3>Ferramentas do dia a dia</h3>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> which <span class="arg">--all</span></p>
+    <div class="out">
       <ul class="chips">
         <li>Switches L2</li><li>VLANs 802.1Q</li><li>MikroTik / RouterOS</li><li>Wi-Fi corporativo</li>
         <li>Ubiquiti / UniFi</li><li>Cabeamento estruturado</li><li>Windows Server</li><li>Linux</li>
         <li>Hyper-V</li><li>Proxmox</li><li>Active Directory / GPO</li><li>Microsoft 365</li>
-        <li>Entra ID</li><li>Fortigate</li><li>SonicWall</li><li>Zabbix</li><li>Grafana</li>
+        <li>Entra ID</li><li>FortiGate</li><li>SonicWall</li><li>Zabbix</li><li>Grafana</li>
         <li>PRTG</li><li>Acronis</li><li>Bitdefender</li><li>Power BI</li><li>SQL Server</li>
         <li>MySQL</li><li>PowerShell</li><li>Git</li>
       </ul>
-      <p>
-        E, por consequência da área: Issabel / Asterisk, Yealink, Hikvision e Intelbras.
-      </p>
+      <p class="comment">// por consequência da área: Issabel / Asterisk, Yealink, Hikvision, Intelbras</p>
+    </div>
 
-      <h3>Formação e certificações</h3>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> cat <span class="arg">formacao.txt</span></p>
+    <div class="out">
       <p class="note">
-        <span class="todo">Preencher:</span> formação acadêmica, cursos e certificações.
-        Também tenho experiência com documentação e auditoria <strong>ISO 27001 / 9001 / 14001</strong>.
+        <span class="todo">[pendente]</span> formação acadêmica, cursos e certificações.
+        Experiência com documentação e auditoria <span class="strong">ISO 27001 / 9001 / 14001</span>.
       </p>
     </div>
-  </section>
 
-  <section class="page-thought">
-    <div class="wrap">
-      <p class="eyebrow">O CRITÉRIO</p>
-      <blockquote>“Se a operação depende de quem implantou, o projeto não terminou.”</blockquote>
-      <cite>— como eu fecho um projeto</cite>
+    <p class="cmd"><span class="user">victor@infra</span><span class="sep">:</span><span class="path">~</span><span class="sig">$</span> echo <span class="arg">$CRITERIO</span></p>
+    <div class="out">
+      <p class="ok">"Se a operação depende de quem implantou, o projeto não terminou."<span class="cursor" aria-hidden="true"></span></p>
     </div>
-  </section>
 
-</main>
+  </main>
+</div>
 
-<footer class="site-footer">
-  <div class="footer-inner">
-    <span>© <span id="ano">2026</span> Victor Queiroga Toledo</span>
-    <nav class="footer-links" aria-label="Links externos">
-      <a href="https://github.com/VictorQueirogaToledo">GitHub</a>
-      <a href="https://github.com/VictorQueirogaToledo/apresentacoes">Apresentações</a>
-      <a href="https://queirogasolution.com.br">QSI</a>
-      <a href="https://www.linkedin.com/in/victor-queiroga-toledo/">LinkedIn</a>
-    </nav>
-  </div>
+<footer class="foot">
+  <span>© <span id="ano">2026</span> Victor Queiroga Toledo</span>
+  <nav aria-label="Links externos">
+    <a href="https://github.com/VictorQueirogaToledo">github</a>
+    <a href="https://github.com/VictorQueirogaToledo/apresentacoes">apresentações</a>
+    <a href="https://queirogasolution.com.br">qsi</a>
+    <a href="https://www.linkedin.com/in/victor-queiroga-toledo/">linkedin</a>
+  </nav>
 </footer>
 
 <script src="assets/site.js"></script>
