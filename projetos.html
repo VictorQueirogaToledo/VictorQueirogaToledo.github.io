@@ -35,7 +35,7 @@
       <h1 style="font-size:clamp(34px,7vw,68px)">O que eu já coloquei de pé.</h1>
       <p class="lede">
         Cada projeto abre a apresentação completa no GitHub: objetivo, escopo, levantamento,
-        solução, validação, resultado e lições aprendidas. Todo conteúdo é sanitizado — sem
+        solução, validação, resultado e lições aprendidas. São dez, e todo conteúdo é sanitizado — sem
         nome de cliente, IP, hostname, ramal ou credencial.
       </p>
     </div>
@@ -63,8 +63,17 @@
           </div>
         </a>
 
+        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/backup-config-rede-powershell">
+          <p class="card-kicker">03 · Automação</p>
+          <h3>Backup versionado de configuração</h3>
+          <p>Roteador em produção sem nenhuma cópia da configuração. Script que gera export e backup, traz os dois para um repositório local, limpa o equipamento e mostra o que mudou desde a última rodada.</p>
+          <div class="tags">
+            <span class="tag">PowerShell</span><span class="tag">RouterOS</span><span class="tag">SSH</span>
+          </div>
+        </a>
+
         <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/deploy-gpo-web-agent">
-          <p class="card-kicker">03 · Windows / AD</p>
+          <p class="card-kicker">04 · Windows / AD</p>
           <h3>Deploy per-user via script de logon</h3>
           <p>Instalador per-user descarta a GPO de software. Script PowerShell idempotente no logon, cópia local antes de instalar e código de reinício pendente tratado como sucesso.</p>
           <div class="tags">
@@ -72,8 +81,17 @@
           </div>
         </a>
 
+        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/higiene-inventario-endpoints">
+          <p class="card-kicker">05 · Endpoint</p>
+          <h3>Higiene do inventário de antivírus</h3>
+          <p>76 máquinas sem reportar ao console há mais de 30 dias, 36 delas ainda consumindo licença. Classificação por faixa de abandono, separando máquina desativada de máquina desprotegida.</p>
+          <div class="tags">
+            <span class="tag">Endpoint protection</span><span class="tag">Inventário</span><span class="tag">AD</span>
+          </div>
+        </a>
+
         <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/powerbi-cdr-telefonia">
-          <p class="card-kicker">04 · Dados</p>
+          <p class="card-kicker">06 · Dados</p>
           <h3>Power BI sobre o CDR do PABX</h3>
           <p>O CDR grava uma linha por perna, não por chamada: ler a tabela crua mostrava 8% de atendimento em vez dos 52% reais. Consolidação correta, consulta de 117s para 1,8s e acesso com privilégio mínimo.</p>
           <div class="tags">
@@ -81,8 +99,17 @@
           </div>
         </a>
 
+        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/acesso-dados-privilegio-minimo">
+          <p class="card-kicker">07 · Segurança de acesso</p>
+          <h3>Privilégio mínimo para a equipe de dados</h3>
+          <p>O schema de configuração do PABX guarda senhas SIP em texto plano. Acesso entregue por views de dimensão com segurança de definidor: o dado útil passa, o segredo não.</p>
+          <div class="tags">
+            <span class="tag">MySQL</span><span class="tag">Views</span><span class="tag">GRANT</span>
+          </div>
+        </a>
+
         <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/telefonia-ip-issabel">
-          <p class="card-kicker">05 · Telefonia IP</p>
+          <p class="card-kicker">08 · Telefonia IP</p>
           <h3>Inventário e padronização de codecs</h3>
           <p>Mais de 200 ramais SIP sem inventário, sem padrão de codec e sem documentação. Levantamento extraído do banco de configuração, padronização e mapa de onde cada objeto vive.</p>
           <div class="tags">
@@ -91,11 +118,20 @@
         </a>
 
         <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/site-estatico-pages-cloudflare">
-          <p class="card-kicker">06 · Publicação</p>
+          <p class="card-kicker">09 · Publicação</p>
           <h3>Site estático com Pages + Cloudflare</h3>
-          <p>Publicação por CI a cada push, domínio próprio, TLS estrito antes de ligar o proxy, seis cabeçalhos de segurança e imagens de 4,25 MB para 184 KB.</p>
+          <p>Publicação por CI a cada push, domínio próprio, TLS estrito antes de ligar o proxy e imagens de 4,25 MB para 184 KB.</p>
           <div class="tags">
             <span class="tag">GitHub Pages</span><span class="tag">Cloudflare</span><span class="tag">CI/CD</span>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/VictorQueirogaToledo/apresentacoes/tree/main/hardening-cabecalhos-csp">
+          <p class="card-kicker">10 · Segurança web</p>
+          <h3>Cabeçalhos de segurança e CSP</h3>
+          <p>Hospedagem que não permite configurar cabeçalho HTTP: seis cabeçalhos aplicados na borda e um script de terceiro integrado sem afrouxar a política — nem quebrar os formulários.</p>
+          <div class="tags">
+            <span class="tag">CSP</span><span class="tag">HSTS</span><span class="tag">TLS</span><span class="tag">API</span>
           </div>
         </a>
 
